@@ -14,6 +14,7 @@ RUN chmod a+x /usr/local/bin/* && \
 
 VOLUME ["/data"]
 ENV MONGODB_URL='mongodb://127.0.0.1:27017'
+ENV RPC_HOST=127.0.0.1
 WORKDIR /data
 
 EXPOSE 8556 27017 28556 28555

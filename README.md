@@ -10,10 +10,13 @@ A Docker configuration with sane defaults for running a full BitDB for Bitcore.
 ## Usage
 
 ```
-docker run --rm --name docker-bitd-btx -p 127.0.0.1:28556:28556 -p 28555:28555 -e MONGODB_URL='mongodb://127.0.0.1:27017'  dalijolijo/docker-bitd-btx
+docker run --rm --name docker-bitd-btx -p 127.0.0.1:28556:28556 -p 28555:28555 -e MONGODB_URL='mongodb://127.0.0.1:27017' -e RPC_HOST=127.0.0.1  dalijolijo/docker-bitd-btx
 ```
 
-optional: MONGODB_URL (default: mongodb://127.0.0.1:27017)
+### Optional variables
+MONGODB_URL (default: mongodb://127.0.0.1:27017)
+
+RPC_HOST (default: 127.0.0.1)
 
 
 ## Build image
