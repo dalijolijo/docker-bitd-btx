@@ -13,6 +13,7 @@ RUN chmod a+x /usr/local/bin/* && \
     npm install
 
 VOLUME ["/data"]
+ENV MONGODB_URL='mongodb://127.0.0.1:27017'
 WORKDIR /data
 
 EXPOSE 8556 27017 28556 28555
